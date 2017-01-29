@@ -11,3 +11,5 @@ browser.get(url) # open the browser and load the website
 textarea = browser.find_element_by_id('trackingNo03')
 textarea.clear() # clear the form field
 textarea.send_keys(trackNo) # send the tracking number to the form
+
+browser.find_element_by_id('bttest').click() # find the submit button, and click it
