@@ -13,3 +13,9 @@ textarea.clear() # clear the form field
 textarea.send_keys(trackNo) # send the tracking number to the form
 
 browser.find_element_by_id('bttest').click() # find the submit button, and click it
+
+# find the result table
+restable = browser.find_element_by_id('tbDetails')
+
+# print the html table
+print restable.text
