@@ -16,6 +16,7 @@ pip install selenium
 ```
 python main.py <tracking_number>
 ```
+![alt tag](https://raw.githubusercontent.com/afzafri/Poslaju-Web-Scraper-using-Python/master/ss.PNG)
 
 ## References & Credits
 - Selenium: https://github.com/SeleniumHQ/selenium
