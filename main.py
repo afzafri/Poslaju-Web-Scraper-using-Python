@@ -32,5 +32,10 @@ else:
 
 	print "Results:\n"
 
+	# parse each row and column of the table, and print
+	for row in restable.find_elements_by_tag_name('tr'):
+		for column in row.find_elements_by_tag_name('td'):
+			print column.text
+
 	# print the html table
-	print restable.text
+	#print restable.text
