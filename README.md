@@ -13,6 +13,7 @@ pip install selenium
   - Unzip the file, and copy to any directory you like. Make sure to noted the path to the driver, to be used in the program.
  
 ## References & Credits
+- Selenium: https://github.com/SeleniumHQ/selenium
 - Thiago Marzagão: http://thiagomarzagao.com/2013/11/12/webscraping-with-selenium-part-1/
 
 ## License
