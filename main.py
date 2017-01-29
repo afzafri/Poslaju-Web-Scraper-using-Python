@@ -1,4 +1,5 @@
 import sys
+import json
 from selenium import webdriver
 
 print "------------------------------------------\n"
@@ -34,7 +35,7 @@ else:
 
 	results = {}
 	i = 0
-
+	
 	# parse each row and column of the table, and print
 	for row in restable.find_elements_by_tag_name('tr'):
 		column = row.find_elements_by_tag_name('td')
@@ -43,4 +44,4 @@ else:
 
 		i = i + 1
 
-	print results
+	print json.dumps(results, indent=1)
