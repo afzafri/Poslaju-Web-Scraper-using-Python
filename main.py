@@ -32,10 +32,15 @@ else:
 
 	print "Results:\n"
 
+	results = {}
+	i = 0
+
 	# parse each row and column of the table, and print
 	for row in restable.find_elements_by_tag_name('tr'):
-		for column in row.find_elements_by_tag_name('td'):
-			print column.text
+		column = row.find_elements_by_tag_name('td')
+		for j in range(len(column)):
+			results[i] = {'datetime' : column[0].text, 'process' : column[1].text, 'event' : column[2].text}
 
-	# print the html table
-	#print restable.text
+		i = i + 1
+
+	print results
